@@ -1,0 +1,55 @@
+/* reset */
+body,html{
+    padding: 0;margin: 0;overflow: hidden;
+    height: 100vh;
+    background: rgba(244, 219, 143, .2) top url("./background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.container{
+    background: rgba(255, 255, 255, .4);
+    height: 100%;
+    color: #333;    
+    animation: bg 1s;
+    font-weight: 400;
+    position: relative;
+    overflow: hidden;
+}
+.container p{
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    top: 412px;
+    left: 10px;
+    font-size: 22px;
+    animation: show 1s;
+    /* font-weight: 400; */
+    color: rgba(184, 28, 34, 1);
+    color: rgba(184, 28, 34, .7);
+}
+.time{
+    position: absolute;
+    bottom: 5px;
+    left: 10px;
+    color: rgba(218, 78, 112,.6);
+    font-size: 14px;
+    
+}
+
+/* animate */
+@keyframes bg{
+    from{
+        background: rgba(255, 255, 255, 1);
+    }
+    to{
+        background: rgba(255, 255, 255, 0.4);
+    }
+}
+@keyframes show{
+    from{
+        opacity: 0.5;
+    }
+    to{
+        opacity: 1;
+    }
+}
